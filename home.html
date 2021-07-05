@@ -8,13 +8,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet"> 
+    <!--<link rel="shortcut icon" href="cass_logo.png">-->
   </head>
   <body>
     <div id="frontpage">
-      <ul>
+      <ul class="home-nav">
           <li><a href=#product>THE PRODUCT</a></li>
           <li><a href=#timeline>TIMELINE</a></li>
-          <li><a href=#story>OUR STORY</a></li>
+          <li><a href="about.html">ABOUT</a></li>
           <li><a href=#contact>CONTACT</a></li>
       </ul>
       <p class="front">CASS</p>
@@ -22,6 +23,17 @@
             <source src="cass_vid_cropped.mp4" type="video/mp4">
             Your browser does not support HTML5 video.
           </video>
+          <div class="mouse_scroll">
+
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <div>
+                <span class="m_scroll_arrows unu"></span>
+                <span class="m_scroll_arrows doi"></span>
+                <span class="m_scroll_arrows trei"></span>
+            </div>
+    </div>
       </div>
       <div id="product">
         <h1>THE PRODUCT</h1>
@@ -29,11 +41,33 @@
         <img src="model.png">
         <div class="info-block">
         <h2>What is CASS?</h2>
-        <p>This is our Beta Prototype for CASS which has a 3D printed apparatus. 
-            The lights used are the same intensity as standard brake lights making them efficient and visible at any time of day. 
-            The product itself is also small in size measuring at </p>
+        <p>CASS provides an additive safety measure for vehicles. 
+            This provides a better experience for daily drivers. 
+            Our solution increases the reaction time for drivers in order to greatly reduce the number of rear-end collisions that occur. 
+            By allowing for a greater reaction time, drivers are given the opportunity to avoid the collision by noticing the obvious indication of a sudden brake through our product. 
+            The daily drivers are the people that will benefit from this product that will provide a more comfortable and safe experience for them. 
+            CASS is a novel invention designed to improve on the modern brake light.</p>
         </div>
     </div>
+    
+    <div class="stats">
+    <h2>Why CASS?</h2>
+    <img src="map.PNG" class="map">
+    <div class="stats-block">
+        <div class="stats-item">
+        <h1>43%</h1>
+        <p>of ALL drivers experience a close call or rear-end collision</p>
+    </div>
+    <div class="stats-item">
+        <h1>47%</h1>
+        <p>of those who experience a collision didn't react fast enough</p>
+    </div>
+    <div class="stats-item">
+        <h1>400ms</h1>
+        <p>slower reaction time when an unexpected brake occurs</p>
+    </div>
+    </div>
+</div>
       </div>
       <div id="timeline">
           <h1>TIMELINE</h1>
@@ -93,31 +127,9 @@
             </div>
           </div>
       </div>
-      <div id="story">
-        <h1>OUR STORY</h1>
-        <div class="story-block">
-        <p>
-            Founded in August 2020 co-founders Hritish and Ethan took their high school capstone project to the next level. 
-            When studying safety in vehicles, they both realized that there was one major gap in innovation. 
-            Brake lights. Brake lights haven’t changed in principle for decades even though they cause the same issues year after year. 
-            Drivers can’t tell how hard the person in front is braking, they have to judge that. 
-            To solve this, they created CASS. They believed that CASS was and is a needed product in today’s market where cars just a couple or few years old are neglected in terms of safety features and suffer the consequences on the road. 
-            They then got to work creating a new preventative safety feature and have since added a co-founder/ CTO (Matt Silverman), two Software Developers (Alyssa Nguyen & Auston Lin) to the team and an Angel Investor (Sam Nanayakkara). 
-
-            
-
-        </p>
-        <p>Now as the team expands, CASS is looking to further expand its team as we embark on a journey to embed our product in every car out there! </p>
-    </div>  
-    </div>
     <div id="contact">
-        <h1>CONTACT US</h1>
-        <div class="contact-block">
+        <h1>MAILING LIST</h1>
         <div class="mailing">
-            <p>Email: <a href="mailto:bhargava.madison@gmail.com">
-                bhargava.madison@gmail.com</a>
-                <br>
-                Phone Number: +1 (203) 812 - 9848 </p>
             <h3>Sign up for our Mailing List!</h3>
         <form action="https://getform.io/f/862012d7-3014-411d-b769-8a7cd9383f76" method="POST">
             <label for="fname">First Name</label>
@@ -134,9 +146,14 @@
             <br>
             <button type="submit">Sign Up</button>
           </form>
-          
-        </div>
     </div>
+    </div>
+    <div class="footer">
+        <h3>Contact us:</h3>
+        <p>Email: <a href="mailto:bhargava.madison@gmail.com">
+            bhargava.madison@gmail.com</a>
+            <br>
+            Phone Number: +1 (203) 812-9848 </p>
     </div>
   </body>
   </html>
