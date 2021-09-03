@@ -1,72 +1,77 @@
   body {
-      font-family: 'Open Sans', sans-serif;
-      color: #fff;
+      font-family: 'Comfortaa', sans-serif;
+      color: #505056;
       margin: 0;
       padding: 0;
-      background-color: #000
+      background-color: #FCFCFC
       /*font-size: calc(0.35em + 0.75vw);*/
+  }
+  
+  .smaller-nav {
+      display: none;
+  }
+  
+  @media only screen and (max-width: 768px) {
+      .logo img {
+          display: none;
+      }
+      .nav {
+          display: none;
+      }
+      .smaller-nav {
+          display: flex;
+          justify-content: space-between;
+          margin-right: auto;
+          margin-left: auto;
+      }
+      .smaller-nav ul {
+          display: flex;
+          list-style: none;
+          justify-content: space-around;
+          text-align: center;
+          padding-left: 0;
+      }
+      .smaller-nav li a {
+          text-decoration: none;
+          color: #505056;
+          margin-right: 30px;
+          margin-left: 30px;
+      }
+      .smaller-nav li a:hover {
+          text-decoration: none;
+          color: #bcb8b1;
+      }
+      .form {
+          width: 90%
+      }
+      .top {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+  }
+  
+  .logo img {
+      width: 80%;
+  }
+  
+  .cover-photo img {
+      width: 100%;
   }
   
   .top {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      grid-area: top;
   }
   
-  .container {
-      display: grid;
-      grid-template-columns: repeat(12, minmax(0, 1fr));
-      ;
-      grid-template-rows: .5fr 5fr auto auto 3fr auto;
-      grid-template-areas: ". top top top top header header header header header header header" ". . safety safety safety . cover-photo cover-photo cover-photo cover-photo  . ." " . . product product product product product timeline timeline timeline timeline . " " . . stats stats stats stats stats stats stats stats . . " " . mailing mailing mailing mailing mailing mailing mailing mailing mailing mailing  . " "footer footer footer footer footer footer footer footer footer footer footer footer";
-  }
-  
-  .cover-photo {
-      grid-area: cover-photo;
-      padding-top: 60px
-  }
-  
-  .nav {
-      grid-area: header;
-      align-self: center;
-  }
-  
-  .safety {
-      grid-area: safety;
-      align-self: center;
-  }
-  
-  .main {
-      grid-area: main;
-  }
-  
-  .logo {
-      margin-top: 20px;
-  }
-  
-  .info-block {
-      grid-area: product;
-      justify-self: center;
-  }
-  
-  .timeline {
-      grid-area: timeline;
-  }
-  
-  .stats {
-      grid-area: stats;
-      justify-self: center;
-  }
-  
-  .mailing {
-      grid-area: mailing;
-      justify-self: center;
-      align-self: center;
-  }
-  
-  .footer {
-      grid-area: footer;
+  .mid {
+      display: flex;
+      justify-content: space-around;
+      align-items: top;
+      flex-wrap: wrap;
+      margin-right: auto;
+      margin-left: auto;
   }
   
    ::selection {
@@ -83,16 +88,14 @@
       display: none;
   }
   
-  sub {
-      font-size: 14px;
-      font-weight: lighter;
+  .nav {
+      margin-right: 10%;
   }
   
   .nav ul {
       display: flex;
       list-style: none;
       justify-content: center;
-      position: absolute;
       text-align: center;
   }
   
@@ -103,42 +106,49 @@
   
   .nav li a {
       text-decoration: none;
-      color: #fff;
+      color: #505056;
   }
   
-  .nav li a:hover {
-      text-decoration: none;
-      color: #bcb8b1;
+  .nav {
+      margin-right: 10%;
   }
   
   p {
       font-size: 18px;
   }
   
-  .about-nav li a {
-      color: #141414;
-  }
-  
   .contact-button {
-      padding: 20px;
-      border-color: #fff;
-      border-width: 3px;
-      border-style: solid;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 15px 10px 25px;
       text-decoration: none;
-      background-color: #000;
-      color: #fff;
+      background-color: #FCFCFC;
+      color: #505056;
       margin-top: 10px;
+      box-shadow: 0px 4px 32px rgba(80, 80, 86, 0.18);
+      width: 90%;
+      border-radius: 15px;
   }
   
-  .info-block-half {
-      display: flex;
-      flex-wrap: nowrap;
-      justify-content: center;
+  .block {
+      border-radius: 60px;
+      box-shadow: 0px 4px 32px rgba(80, 80, 86, 0.18);
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  
+  .info-block {
+      border-radius: 60px 60px 0px 0px;
+      padding: 80px 40px 40px 40px;
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
   }
   
   .stats {
       color: #fff;
-      justify-self: stretch;
   }
   
   .stats-block {
@@ -146,40 +156,55 @@
       justify-content: center;
       flex-wrap: wrap;
       text-align: center;
+      box-shadow: 0px 4px 32px rgba(80, 80, 86, 0.18);
+      background-color: #4A5C8C;
+      padding: 40px 40px 80px 40px;
+      border-radius: 0px 0px 60px 60px;
   }
   
   .stats-item p {
       width: 300px;
-      font-size: 24px;
+      font-size: 22px;
+      padding: 0px 10px 0px 10px;
+      display: flex;
   }
   
   h4 {
       text-align: center;
   }
   
+  .mailing {
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+  }
+  
   .mailing input {
       padding: 12px 20px;
-      justify-self: stretch;
-      background-color: #000;
-      color: #fff;
-      font-size: 18px;
+      background-color: #FCFCFC;
+      color: #505056;
       border: none;
   }
   
   .mailing button {
-      padding: 14px 20px;
-      margin: 8px;
+      padding: 15px;
+      width: 20%;
       border: none;
       cursor: pointer;
-      background-color: #fff;
-      color: #505056;
+      background-color: #4A5C8C;
+      color: #fff;
+      border-radius: 15px;
   }
   
   form {
-      display: flex;
-      flex-direction: row;
-      border: 3px solid #fff;
       padding: 4px;
+      box-shadow: 0px 4px 32px rgba(80, 80, 86, 0.18);
+      display: flex;
+      justify-content: space-between;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 15px;
+      width: 30%;
   }
   
   input:focus {
@@ -188,13 +213,15 @@
   }
   
   button:hover {
-      background-color: #e9e9e9;
+      background-color: #4A5C8C;
   }
   
   .footer {
-      padding: 150px 10px 150px 10px;
+      padding: 100px 10px 100px 10px;
       text-align: center;
-      color: #fff;
+      color: #505056;
+      background-color: #F2F2F2;
+      margin-top: 50px;
   }
   
   .footer a {
@@ -221,48 +248,11 @@
       height: 200px;
       width: 200px;
       padding: 15px;
+      border-radius: 120px;
   }
   
   .bio {
       text-align: center;
-  }
-  
-  .timeline {
-      width: 355px;
-      height: 696px;
-      overflow: hidden;
-      top: 144px;
-      margin-left: 71px;
-  }
-  
-  .box {
-      width: 100%;
-      height: 509px;
-      display: flex;
-      justify-content: flex-start;
-  }
-  
-  .line {
-      height: 65px;
-      width: 2px;
-      background: #D1D6E6;
-      margin-left: 5.3px;
-  }
-  
-  .cards {
-      margin-left: 12px;
-  }
-  
-  .card {
-      padding: 5px;
-      margin-bottom: 10px;
-      text-align: center;
-      border: 1px solid #fff;
-  }
-  
-  .card p {
-      color: #fff;
-      font-size: 12px;
   }
   
   .bottom {
@@ -271,11 +261,6 @@
       background: #fff;
       box-shadow: 0 0 2px #eeeeee50;
       padding-top: 45px;
-  }
-  
-  .timeline ul li:before {
-      color: #fff;
-      width: 8em;
   }
   
   .about-block {
