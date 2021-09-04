@@ -10,6 +10,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&display=swap" rel="stylesheet">
     <!--<link rel="shortcut icon" href="cass_logo.png">-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="bower_components/aos/dist/aos.css" />
+    <base href=.>
 </head>
 
 <body>
@@ -34,19 +37,19 @@
             </div>
         </div>
         <div class="mid">
-            <div class="safety">
+            <div class="safety" data-aos="fade-right">
                 <h1>Redefining <br>Safety</h1>
                 <p>Start your day safer <br>with CASS</p>
                 <br>
                 <a href="#contact" class="contact-button">Contact us<img src="message.svg"></a>
             </div>
-            <div class="cover-photo">
+            <div class="cover-photo" data-aos="fade-up">
                 <img src="model.png">
             </div>
         </div>
         <div class="block">
-            <div class="info-block" id="#about">
-                <h2>What is CASS?</h2>
+            <div class="info-block">
+                <h2 id="#product">What is CASS?</h2>
                 <p>CASS provides an additive safety measure for vehicles. This provides a better experience for daily drivers.
                     <br>
                     <br> Our solution increases the reaction time for drivers in order to greatly reduce the number of rear-end collisions that occur.
@@ -58,7 +61,7 @@
                     <br> CASS is a novel invention designed to improve on the modern brake light.
                 </p>
             </div>
-            <div class="stats">
+            <div class="stats" data-aos="fade-up">
                 <h2>Why CASS?</h2>
                 <div class="stats-block">
                     <div class="stats-item">
@@ -108,9 +111,9 @@
             </div>
         </div>
     -->
-        <div class="mailing" id="#mailing">
-            <p>Sign up for our Mailing List!</p>
-            <form action="https://getform.io/f/862012d7-3014-411d-b769-8a7cd9383f76" method="POST">
+        <div class="mailing">
+            <p id="#mailing">Sign up for our Mailing List!</p>
+            <form action="https://getform.io/f/862012d7-3014-411d-b769-8a7cd9383f76" method="POST" data-aos="fade-up">
                 <input type="email" id="email" name="email" placeholder="Email">
                 <button type="submit">Sign Up</button>
             </form>
@@ -123,6 +126,10 @@
             </p>
         </div>
     </div>
+
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
