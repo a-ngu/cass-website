@@ -10,9 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&display=swap" rel="stylesheet">
     <!--<link rel="shortcut icon" href="cass_logo.png">-->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="bower_components/aos/dist/aos.css" />
-    <base href=.>
 </head>
 
 <body>
@@ -47,9 +45,9 @@
                 <img src="model.png">
             </div>
         </div>
-        <div class="block">
+        <div class="block" id="product">
             <div class="info-block">
-                <h2 id="#product">What is CASS?</h2>
+                <h2>What is CASS?</h2>
                 <p>CASS provides an additive safety measure for vehicles. This provides a better experience for daily drivers.
                     <br>
                     <br> Our solution increases the reaction time for drivers in order to greatly reduce the number of rear-end collisions that occur.
@@ -112,13 +110,13 @@
         </div>
     -->
         <div class="mailing">
-            <p id="#mailing">Sign up for our Mailing List!</p>
+            <p id="mailing">Sign up for our Mailing List!</p>
             <form action="https://getform.io/f/862012d7-3014-411d-b769-8a7cd9383f76" method="POST" data-aos="fade-up">
                 <input type="email" id="email" name="email" placeholder="Email">
                 <button type="submit">Sign Up</button>
             </form>
         </div>
-        <div class="footer" id="#contact">
+        <div class="footer" id="contact">
             <h3>Contact us:</h3>
             <p>Email: <a href="mailto:bhargava.madison@gmail.com">
           bhargava.madison@gmail.com</a>
@@ -126,9 +124,12 @@
             </p>
         </div>
     </div>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init();
+        AOS.init({
+            duration: 1200,
+        });
+        console.log("reeee")
     </script>
 </body>
 
