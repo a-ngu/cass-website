@@ -41,8 +41,16 @@
           text-decoration: none;
           color: #bcb8b1;
       }
-      .form {
-          width: 90%
+      .mailing {
+          width: 90%;
+      }
+      .mailing input {
+          width: 90%;
+          display: flex;
+      }
+      .mailing form {
+          width: 90%;
+          display: flex;
       }
       .top {
           display: flex;
